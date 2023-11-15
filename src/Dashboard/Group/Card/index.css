@@ -1,0 +1,30 @@
+.card{
+  position: relative;
+  height: 70px;
+  margin: 3px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px 0 rgba(189, 189, 189, 0.2), 0 1px 5px 0 rgba(172, 172, 172, 0.19);
+  border: 1px rgb(214, 214, 214) solid;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 3px;
+  font-size: small;
+}
+
+p{
+  font-size: 11px;
+  margin: 0px;
+}
+.card-id{
+  font-weight: 500;
+  color:rgb(136, 136, 136);
+}
+.card-topic{
+  font-weight: 500;
+}
+
+.card-feature{
+  position: absolute;
+  bottom: 10px;
+}

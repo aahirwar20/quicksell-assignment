@@ -1,0 +1,10 @@
+.group-list{
+    position: relative;
+    display: flex;
+    flex-wrap: row;
+    background-color: rgb(242, 244, 247);
+}
+.nav-bar{
+    position: relative;
+    height: 50px;
+}
