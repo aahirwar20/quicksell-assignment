@@ -5,9 +5,12 @@ import Card from './Card'
 
 
 function Group(props){
-
-  const list = props.list === undefined?[]:props.list
-  const icon = props.icons[props.Key][props.id] ? props.icons[props.Key][props.id] : { name : 'radio_button_unchecked', color :'' }
+  function sortCondition(a,b){
+    return a.priority > b.priority
+  }
+  
+  const list = Array.isArray(props.list) ? props.list.sort(sortCondition) : [];
+  const icon = props.Key === "userId"?{ name : 'radio_button_unchecked', color :'' }:(props.icons[props.Key][props.id] ? props.icons[props.Key][props.id] : { name : 'radio_button_unchecked', color :'' })
   return(
     <> 
       <div className="group">
